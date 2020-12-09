@@ -32,9 +32,9 @@ Let's hope you enjoy it as much as I do!
 
 # Introduction
 
-Denotational Design, developed by Conal Elliott, is an abstract and rigorous design method, that forces
+Denotational Design, developed by Conal Elliott, is an abstract and rigorous design method, that
 forces the programmer to _really_ understand the nature of his
-problem domain, and force him to step back and design the _meaning_ of abstraction before implementing it.
+problem domain, stepping back and design the _meaning_ of abstraction before implementing it.
 If the programmer is not able to correctly describe his abstraction to the machine,
 he will introduce bugs, i.e. a leaky abstraction.
 Denotational Design therefore gives us the ability to look at the designs and clearly ask whether
