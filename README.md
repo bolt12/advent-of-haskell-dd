@@ -499,17 +499,20 @@ Now, the equation:
 --    { mu' (fmap f (push h (mu t)))
 -- < def - Stack fmap x2; def - push x2 >
 -- == { mu' (const Nothing) }
---    { mu' (push (f h) (mu t)) }
+--    { mu' (push (f h) (fmap f (mu t))) }
 -- < always returning nothing = always returning empty list; def - mu' for Just values >
 -- == { [] }
---    { f h : mu' (mu t) }
--- < mu' . mu = id >
+--    { f h : mu' (fmap f (mu t)) }
+-- < Stack fmap - homomorphism >
 -- == { [] }
---    { f h : t }
+--    { f h : mu' (mu (fmap f t)) }
+-- < mu' . mu == id >
+-- == { [] }
+--    { f h : fmap f t }
 
 -- Result:
 -- fmap f []    = []
--- fmap f (h:t) = f h : t
+-- fmap f (h:t) = f h : fmap f t
 ```
 
 **Exercise**: Calculate implementations for `push` and `pop`.
