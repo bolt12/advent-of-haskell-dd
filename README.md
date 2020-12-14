@@ -69,9 +69,9 @@ abstraction leak?
   a moment when the gears are switched; if the engine block is too cold, the car may not start or it may have
   poor performance, etc.
 
-  An useful abstraction is one that gives us an understanding of the world that we accept as real.
+  A useful abstraction is one that gives us an understanding of the world that we accept as real.
   An outstanding abstraction is one that never reminds you of its falsehood.
-  An useful abstraction profoundly changes the way you think and behave.
+  A useful abstraction profoundly changes the way you think and behave.
 
   So, an **abstraction leaks** when you still have to deal with details that are not part of the
   abstraction. That can arise when the implementation can't really conform to abstraction,
