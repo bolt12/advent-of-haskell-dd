@@ -367,8 +367,8 @@ instance Functor Stack where
 -- \n -> (f . g) (⟦ s ⟧ n)     =
 -- \n -> f (g (⟦ s ⟧ n))       =
 -- \n -> f ⟦ fmap g s ⟧ n      =
--- \n -> ⟦ fmap f (fmap g) ⟧ n =
--- ⟦ fmap f . fmap g ⟧
+-- \n -> ⟦ fmap f ((fmap g) s) ⟧ n =
+-- ⟦ (fmap f . fmap g) s ⟧
 ```
 
 We could just give a sensible definition for `fmap` first and then see if the laws would
